@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tampilan Awal</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo" id="home">
+        <h1>AFC KONNICHIWA</h1>
+        <img src="./picture/logo.png" alt="Logo" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="#produk">PRODUK</a></li>
+          <li><a href="#about">ABOUT</a></li>
+        </ul>
+      </nav>
+      <button class="btn-cta"><a href="https://wa.me/085275460757">JOIN BISNIS</a></button>
+    </header>
+    <caurosel>
+      <div class="caurosel">
+        <div class="slides">
+          <img src="./picture/descPerusahaan.jpg" alt="">
+        </div>
+        <div class="slides">
+          <img src="./picture/Gratis Ongkir.png" alt="">
+        </div>
+        <div class="slides">
+          <img src="./picture/branda.jpeg" alt="">
+        </div>
+        <div class="slides">
+          <img src="./picture/branda1.jpeg" alt="">
+        </div>
+        <div class="slides">
+          <img src="./picture/branda2.jpeg" alt="">
+        </div>
+        <div class="navigation">
+          <a class="prev" onclick="clickSlides(-1)">&#10094</a>
+          <a class="next" onclick="clickSlides(-1)">&#10095</a>
+        </div>
+      </div>
+    </caurosel>
+    <main>
+    <div class="container element" id="about">
+      <div>
+        <h1 class="judul">AFC KONNICHIWA</h1>
+        <p class="deskripsi">
+          AFC KONNICHIWA adalah perusahaan yang bergerak di bidang kesehatan dan kecantikan <br>yang memiliki produk-produk yang berkualitas dan terjamin keamanannya. <br>AFC KONNICHIWA juga memiliki sistem bisnis yang sangat menguntungkan bagi para membernya.
+        </p>
+        <button class="TombolWa">
+          <img src="./picture/Icon wa.png" alt="wa icon" class="waicon"/>
+        </a>
+        <a
+          href="https://wa.me/085275460757
+    " >WA 085275460757</a
+        >
+      </button>
+      <div class="about">
+        <img src="./picture/branda3.jpeg" alt="Logo"  />
+        <img src="./picture/deskripsi.jpeg" alt="">
+      </div>
+      <div class="about">
+        <img src="./picture/dessu.jpeg" alt="">
+        <img src="./picture/desu.jpeg" alt="">
+      </div>
+    </div>
+    <div class="produk" id="produk">
+      <div class="subarashi">
+        <h1>SOP SUBARASHI</h1>
+      <img src="./picture/SOP SUba.jpg" alt="">
+      <h1>MANFAAT SOP SUBARASHI</h1>
+      <img src="./picture/Manfaat suba.jpeg" alt="" class="img">
+      <br>
+      <button class="tombolsuba">DETAIL PRODUK</button> &nbsp;<span><button class="tombolsuba"><a href="https://wa.me/085275460757">ORDER</a></button></span>
+      </div>
+
+      <div class="utsukushhii">
+        <h1>UTSUKUSHHII GOLD</h1>
+      <img src="./picture/Utsu.jpg" alt="">
+      <h1>MANFAAT UTSUKUSHHII GOLD</h1>
+      <img src="./picture/MANFAAT UTSU.webp" alt="" class="img">
+      <br>
+      <button class="tombolutsu"><a href="/Utsu/Utsu.html">DETAIL PRODUK</a></button> &nbsp;<span><button class="tombolutsu"><a href="https://wa.me/085275460757">ORDER</a></button></span>
+    </div>
+    <div class="sensei">
+      <h1>SENSEI SURU</h1>
+      <img src="./picture/Sensei Suru.jpg" alt="">
+      <h1>MANFAAT SENSEI SURU</h1>
+      <img src="./picture/Manfaat Sensei.webp" alt="" class="img">
+      <br>
+      <button class="tombolsensei">DETAIL PRODUK</button> &nbsp;<span><button class="tombolsensei"><a href="https://wa.me/085275460757">ORDER</a></button></span>
+    </div>
+    <div class="wrap">
+      <img src="./picture/m suba.webp" alt="">
+      <img src="./picture/m utsu.webp" alt="">
+    </div>
+    </div>
+
+    <footer>
+
+      <div class="footer">
+        <div class="foot1">
+          <img src="./picture/logo footer.png" alt="">
+          <button><a href="index.html">Return to Top <img src="./picture/UP.png" alt=""></a></button>
+        </div>
+        <hr>
+        <p>SITEMAP &emsp;&emsp;&emsp;&nbsp; | &emsp;&emsp; <a href="#home">HOME</a>&emsp;&emsp; <a href="#">ABOUT</a> &emsp;&emsp; <a href="#produk">PRODUK</a></p>
+
+        <p>CONTACT &emsp;&emsp;&emsp; | &emsp;<img src="./picture/Icon wa.png" alt="wa"><a href="https://wa.me/085275460757">WhatsApp</a><img src="./picture/instagram.png" alt="wa"><a href="https://instagram.com/yantigea1771?igshid=ZgUzMzM3NWJiOQ==">Instagram</a> <img src="./picture/facebook.png" alt="fb"><a href="https:/www.facebook.com/jurnal.gea?mibextid=ZbWKwl">Facebook</a><img src="./picture/tiktok.png" alt="tt"><a href="https://vt.tiktok.com/ZSLKACovB/">Tiktok</a></p>
+
+        <p>AUTHOR &emsp;&emsp;&emsp;&nbsp; | &emsp;&emsp; Joshua Bulyan Zebua</p>
+        <h4 class="footname">KONNICHIWA</strong></>
+        <h5> &copy; Copyright 2023 AFC KONNICHIWA</p>
+      </div>
+    </footer>
+  </main>
+
+    <script>
+      // Caurosel
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function clickSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName('slides');
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = 'none';
+        }
+        slides[slideIndex-1].style.display = 'block';
+      }
+      // --------------------------------
+    </script>
+    
+  </body>
+</html>
